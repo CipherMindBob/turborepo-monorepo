@@ -1,5 +1,7 @@
 {
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules"
+  ],
   "extends": "@repo/typescript-config/nextjs.json",
   "compilerOptions": {
     "outDir": "dist",
@@ -7,7 +9,20 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "noEmit": true,
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@repo/ui/*": ["../../packages/ui/src/*"],
+      "@repo/logger": ["../../packages/logger/src"],
+      "@repo/auth": ["../../packages/auth"]
+    }
   },
-  "include": ["src", "next.config.ts", "next-env.d.ts", ".next/types/**/*.ts"]
+  "include": [
+    "src",
+    "next.config.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ]
 }

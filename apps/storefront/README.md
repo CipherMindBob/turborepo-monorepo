@@ -1,6 +1,6 @@
-# Blog App
+# Storefront App
 
-Remix-based blog application.
+Next.js-based storefront application.
 
 ## Setup
 
@@ -23,12 +23,15 @@ pnpm dev
 
 ## Environment Variables
 
-- `API_URL`: URL of the API server
+- `NEXT_PUBLIC_API_URL`: URL of the API server
+- `GITHUB_ID`: GitHub OAuth App client ID (from root .env)
+- `GITHUB_SECRET`: GitHub OAuth App client secret (from root .env)
+- `JWT_SECRET`: JWT signing secret (from root .env)
 - `SESSION_SECRET`: Session encryption secret (from root .env)
 
 ## Features
 
-- Remix for server-side rendering
-- Shared authentication with other apps
+- Next.js 14 with App Router
+- NextAuth.js for authentication
 - Shared UI components from `@repo/ui`
-- Type-safe environment variables
+- Type-safe environment variables 

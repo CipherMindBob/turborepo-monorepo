@@ -1,0 +1,12 @@
+{
+  "name": "@repo/env",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "@t3-oss/env-core": "^0.12.0",
+    "zod": "^3.24.2",
+    "valibot": "1.0.0-rc.1"
+  }
+}

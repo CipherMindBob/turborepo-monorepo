@@ -1,6 +1,6 @@
-# Blog App
+# API Server
 
-Remix-based blog application.
+Express-based API server.
 
 ## Setup
 
@@ -23,12 +23,13 @@ pnpm dev
 
 ## Environment Variables
 
-- `API_URL`: URL of the API server
-- `SESSION_SECRET`: Session encryption secret (from root .env)
+- `PORT`: Server port number
+- `CORS_ORIGIN`: Allowed CORS origins (comma-separated)
+- `JWT_SECRET`: JWT signing secret (from root .env)
 
 ## Features
 
-- Remix for server-side rendering
-- Shared authentication with other apps
-- Shared UI components from `@repo/ui`
-- Type-safe environment variables
+- Express server with TypeScript
+- JWT authentication
+- CORS configuration
+- Shared types with frontend apps 

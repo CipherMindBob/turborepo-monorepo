@@ -11,6 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@repo/auth": "workspace:*",
     "@repo/logger": "workspace:*",
     "@repo/ui": "workspace:*",
     "next": "^15.1.6",

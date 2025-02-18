@@ -1,6 +1,6 @@
-# Blog App
+# Admin App
 
-Remix-based blog application.
+Vite-based admin dashboard application.
 
 ## Setup
 
@@ -23,12 +23,12 @@ pnpm dev
 
 ## Environment Variables
 
-- `API_URL`: URL of the API server
-- `SESSION_SECRET`: Session encryption secret (from root .env)
+- `VITE_API_URL`: URL of the API server
+- `VITE_AUTH_URL`: URL of the authentication endpoint
 
 ## Features
 
-- Remix for server-side rendering
+- Vite for fast development
 - Shared authentication with other apps
 - Shared UI components from `@repo/ui`
-- Type-safe environment variables
+- Type-safe environment variables 

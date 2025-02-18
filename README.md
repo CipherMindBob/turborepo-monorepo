@@ -68,3 +68,41 @@ This Turborepo has some additional tools already setup for you:
   import { CounterButton } from "@repo/ui/counter-button";
   import { Link } from "@repo/ui/link";
   ```
+
+## Environment Setup
+
+1. Copy the root `.env.example` to `.env`:
+```bash
+cp .env.example .env
+```
+
+2. Update the `.env` file with your values:
+- `GITHUB_ID`: GitHub OAuth App client ID
+- `GITHUB_SECRET`: GitHub OAuth App client secret
+- `JWT_SECRET`: Random string (min 32 chars) for JWT signing
+- `SESSION_SECRET`: Random string (min 32 chars) for session encryption
+
+3. For local development, you may also need to set up app-specific `.env` files in:
+- `apps/storefront/.env`
+- `apps/admin/.env`
+- `apps/blog/.env`
+- `apps/api/.env`
+
+## Detailed Documentation
+
+Each app has its own README with specific setup instructions and environment variables:
+
+- [Storefront App](apps/storefront/README.md)
+- [Admin Dashboard](apps/admin/README.md)
+- [Blog](apps/blog/README.md)
+- [API Server](apps/api/README.md)
+
+### Known Issues
+
+- Some subdependencies have deprecation warnings:
+  - `abab@2.0.6`
+  - `domexception@4.0.0`
+  - `glob@7.2.3`
+  - `inflight@1.0.6`
+
+These are deep dependencies and don't affect functionality. They will be updated when their parent packages release new versions.
